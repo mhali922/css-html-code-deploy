@@ -1,0 +1,16 @@
+Instruction:
+1.) Create an EC2 machine on AWS
+2.) install docker - yum install docker 
+3.) go to /home/ec2-user && mkdir my_website && cd my_website
+4.) wget https://eservices.saudieng.sa/en/accreditation/profile/pages/PreferredLanguage.aspx
+5.) unzip *.zip
+6.) cd 
+----------------------------------------------
+Now run your website in the docker container:
+1.) write a Dockerfile (refer Dockerfile in this Repo)
+2.) Build a docker image using command - docker build -t . css-html:1.0
+3.) Run this image in docker container - docker run -dit - p 80:80 css-html:1.0
+4.) docker tag css-html:1.0 mhali/css-html:1.0
+5.) Login to docker hub 
+6.) push to docker hub - docker push mhali/css-html:1.0
+
