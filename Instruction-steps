@@ -1,10 +1,10 @@
 Instruction:
 1.) Create an EC2 machine on AWS
-2.) install docker - yum install docker 
+2.) install docker using command -> sudo yum install docker 
 3.) go to /home/ec2-user && mkdir my_website && cd my_website
-4.) wget https://eservices.saudieng.sa/en/accreditation/profile/pages/PreferredLanguage.aspx
-5.) unzip *.zip
-6.) cd 
+4.) Download all the respective files using command - wget https://www.free-css.com/assets/files/free-css-templates/download/page296/neogym.zip
+5.) unzip neogym.zip && cd neogym-html/ && cp -R * ../. && rm -r neogym*
+6.) 
 ----------------------------------------------
 Now run your website in the docker container:
 1.) write a Dockerfile (refer Dockerfile in this Repo)
