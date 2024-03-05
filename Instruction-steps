@@ -1,5 +1,5 @@
 Instruction:
-1.) Create an EC2 machine on AWS
+1.) Create an EC2 machine on AWS & Make sure port 80 is open in the security group of an EC2/VM/Server
 2.) install docker using command -> sudo yum install docker 
 3.) go to /home/ec2-user && mkdir my_website && cd my_website
 4.) Download all the respective files using command - wget https://www.free-css.com/assets/files/free-css-templates/download/page296/neogym.zip
