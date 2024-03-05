@@ -4,10 +4,13 @@ Instruction:
 3.) go to /home/ec2-user && mkdir my_website && cd my_website
 4.) Download all the respective files using command - wget https://www.free-css.com/assets/files/free-css-templates/download/page296/neogym.zip
 5.) unzip neogym.zip && cd neogym-html/ && cp -R * ../. && rm -r neogym*
-6.) 
+
 ----------------------------------------------
 Now run your website in the docker container:
-1.) write a Dockerfile (refer Dockerfile in this Repo)
+
+1.) write a Dockerfile in the same path:/home/ec2-user/my_website (refer Dockerfile in this Repo)
+    - vi Dockerfile 
+        
 2.) Build a docker image using command: docker build -t . <Docker_Image_Name>:<Version>
     example- docker build -t . css-html:1.0
 3.) Run this image in docker container : docker run: dit - p <HOST_PORT>:<CONTAINER_PORT> <Docker_Image_Name>:<Version>
