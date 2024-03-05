@@ -20,4 +20,5 @@ Now run your website in the docker container:
 5.) Login to docker hub: https://hub.docker.com/
 6.) push to docker hub: docker push <DOCKER_HUB_DIR_NAME>/<Docker_Image_Name>:<Version>
     example- docker push mhali/css-html:1.0
+7.) Try opening with IP:PORT and this will open the application.
 
